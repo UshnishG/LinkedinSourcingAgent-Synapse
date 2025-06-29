@@ -1,0 +1,186 @@
+{
+  "job_id": "job-20250630-021732",
+  "job_description": "As an AI Developer Intern, you will work on developing and deploying cutting-edge AI solutions. Your primary focus will be on prompt engineering, Retrieval-Augmented Generation (RAG) pipelines, and agent frameworks like LangChain or LangGraph to create powerful conversational AI experiences.",
+  "candidates_found": 15,
+  "top_candidates": [
+    {
+      "name": "Preethi Shanmugan - AI Prompt Engineer - Stoodio.ai",
+      "linkedin_url": "https://in.linkedin.com/in/preethi-shanmugan-36a76323a",
+      "fit_score": 7.9,
+      "score_breakdown": {
+        "education": 8.5,
+        "trajectory": 7.0,
+        "company": 8.0,
+        "skills": 9.0,
+        "location": 6.0,
+        "tenure": 7.5
+      },
+      "key_matches": [
+        "Strong technical skills",
+        "Strong educational background"
+      ],
+      "outreach_message": "Hi Preethi,\n\nYour profile as an AI Prompt Engineer at Stoodio.ai immediately caught my attention – your expertise in this niche is truly impressive!\n\nI'm reaching out because we're looking for an AI Developer Intern, and your background aligns perfectly with our needs. This role involves developing cutting-edge AI solutions, with a strong focus on prompt engineering, Retrieval-Augmented Generation (RAG) pipelines, and agent frameworks like LangChain.\n\nGiven your hands-on experience in prompt engineering, I believe you'd thrive contributing to powerful conversational AI experiences here. I'm keen to learn more about your work and share how this opportunity could be a great next step for you.\n\nWould you be open to a brief 15-minute call next week to discuss this exciting intern position?"
+    },
+    {
+      "name": "Adrianne Jung - Google Prompt Engineer (Red Teaming)",
+      "linkedin_url": "https://www.linkedin.com/in/arjungwriter",
+      "fit_score": 7.4,
+      "score_breakdown": {
+        "education": 7.0,
+        "trajectory": 6.0,
+        "company": 9.0,
+        "skills": 9.0,
+        "location": 6.0,
+        "tenure": 6.0
+      },
+      "key_matches": [
+        "Strong technical skills",
+        "Impressive company background"
+      ],
+      "outreach_message": "Hi Adrianne,\n\nYour work as a Prompt Engineer at Google, particularly in Red Teaming, immediately caught my eye! We're actively looking for an AI Developer Intern who shares your passion for crafting powerful conversational AI, and your profile stands out.\n\nOur intern role deeply focuses on prompt engineering, aligning perfectly with your expertise. We're also diving into RAG pipelines and agent frameworks like LangChain, and I believe your experience in rigorously testing and understanding AI models would be invaluable in building robust, cutting-edge solutions. Your background in refining AI interactions to ensure performance and safety is exactly what we need to develop impactful conversational experiences.\n\nI'd love to connect for 15 minutes to discuss how your unique skills could make a significant impact on our team's AI initiatives. Would you be open to a brief chat next week?"
+    },
+    {
+      "name": "Natasha O. - AI Prompt Engineer - Client Concierge",
+      "linkedin_url": "https://ke.linkedin.com/in/natasha-o-14684416b",
+      "fit_score": 5.95,
+      "score_breakdown": {
+        "education": 6.0,
+        "trajectory": 5.0,
+        "company": 6.0,
+        "skills": 7.0,
+        "location": 6.0,
+        "tenure": 5.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi Natasha,\n\nHope you're having a great week!\n\nYour profile as an AI Prompt Engineer immediately caught my eye, and I was particularly impressed by your focus on client concierge, which suggests a keen understanding of user needs in AI interactions.\n\nWe're currently seeking an AI Developer Intern to work on developing cutting-edge AI solutions. This role is heavily focused on prompt engineering, building Retrieval-Augmented Generation (RAG) pipelines, and leveraging agent frameworks like LangChain and LangGraph to create powerful conversational AI experiences.\n\nGiven your specialized background in prompt engineering, I believe you would be an exceptional fit for this exciting opportunity. Your skills directly align with the core responsibilities.\n\nWould you be open to a brief 15-minute chat next week to explore this role further?\n\nBest regards,\n[Your Name]\n[Your Company]"
+    },
+    {
+      "name": "AI Prompt Engineering Expert",
+      "linkedin_url": "https://ma.linkedin.com/in/prompt-engineer-481280158/en",
+      "fit_score": 5.55,
+      "score_breakdown": {
+        "education": 7.0,
+        "trajectory": 4.0,
+        "company": 5.0,
+        "skills": 6.0,
+        "location": 6.0,
+        "tenure": 5.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi AI Prompt Engineering Expert,\n\nI hope this message finds you well.\n\nI came across your LinkedIn profile and was immediately impressed by your expertise as an 'AI Prompt Engineering Expert.' Your specialized background aligns perfectly with a unique AI Developer Intern opportunity.\n\nThis role is centered on developing cutting-edge AI solutions, with a strong focus on prompt engineering, building Retrieval-Augmented Generation (RAG) pipelines, and leveraging agent frameworks like LangChain and LangGraph to create powerful conversational AI. Given your deep dive into prompt engineering, I believe your skills would be incredibly valuable in shaping these advanced AI experiences from day one.\n\nWould you be open to a brief 15-minute call next week to discuss how your specific expertise could contribute to our innovative projects?\n\nBest regards,"
+    },
+    {
+      "name": "Josh Thompson - AI Prompt Engineer",
+      "linkedin_url": "https://www.linkedin.com/in/mrjoshthompson",
+      "fit_score": 4.95,
+      "score_breakdown": {
+        "education": 5.0,
+        "trajectory": 3.0,
+        "company": 5.0,
+        "skills": 6.0,
+        "location": 6.0,
+        "tenure": 5.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi Josh,\n\nI hope this message finds you well.\n\nI came across your LinkedIn profile and was immediately impressed by your background as an **AI Prompt Engineer**. Your specialized experience truly stands out!\n\nWe're currently seeking an **AI Developer Intern** who is passionate about developing cutting-edge AI solutions. This role would heavily involve prompt engineering, designing Retrieval-Augmented Generation (RAG) pipelines, and utilizing agent frameworks like LangChain or LangGraph to create powerful conversational AI experiences. Your current expertise aligns perfectly with these core responsibilities.\n\nWould you be open to a brief 15-minute chat next week to discuss this exciting opportunity and see if it could be a great next step for you?\n\nBest regards,\n\n[Your Name]\nRecruiter"
+    },
+    {
+      "name": "Michael Horan - Generative AI Prompt Engineer",
+      "linkedin_url": "https://www.linkedin.com/in/michael-horan-tinley",
+      "fit_score": 2.25,
+      "score_breakdown": {
+        "education": 1.0,
+        "trajectory": 1.0,
+        "company": 1.0,
+        "skills": 4.0,
+        "location": 6.0,
+        "tenure": 1.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi Michael,\n\nI was genuinely impressed by your profile, particularly your specialization as a Generative AI Prompt Engineer. Your expertise immediately brought to mind our AI Developer Intern role, which focuses squarely on building cutting-edge AI solutions.\n\nThis position deeply involves advanced prompt engineering, developing Retrieval-Augmented Generation (RAG) pipelines, and leveraging agent frameworks like LangChain to craft powerful conversational AI experiences. Your hands-on background is precisely what we’re looking for to contribute to these initiatives.\n\nI’d love to share more about this exciting opportunity and explore how your skills align. Would you be open to a brief chat sometime next week?"
+    },
+    {
+      "name": "Ramakrishna G - Generative AI Prompt Engineer - ChatGPT",
+      "linkedin_url": "https://in.linkedin.com/in/ramdigitalmarketing",
+      "fit_score": 2.0,
+      "score_breakdown": {
+        "education": 1.0,
+        "trajectory": 1.0,
+        "company": 1.0,
+        "skills": 3.0,
+        "location": 6.0,
+        "tenure": 1.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi Ramakrishna,\n\nI hope this message finds you well.\n\nI came across your profile and was particularly impressed by your experience as a Generative AI Prompt Engineer. Your background immediately stood out as a strong match for an AI Developer Intern role we're recruiting for.\n\nThis internship focuses heavily on developing cutting-edge AI solutions, with a primary emphasis on prompt engineering, RAG pipelines, and agent frameworks like LangChain to create powerful conversational AI experiences. Your expertise in prompt engineering and ChatGPT would be invaluable as we work on these exciting projects.\n\nI'd love to connect briefly to share more about this opportunity and learn about your career aspirations. Would you be open to a quick 15-minute chat sometime next week?\n\nBest regards,\n\n[Your Name]\nRecruiter"
+    },
+    {
+      "name": "Sophia Linda Manu - AI Prompt Engineering - Self-employed",
+      "linkedin_url": "https://gh.linkedin.com/in/sophia-linda-manu-3764471b0",
+      "fit_score": 2.0,
+      "score_breakdown": {
+        "education": 1.0,
+        "trajectory": 1.0,
+        "company": 1.0,
+        "skills": 3.0,
+        "location": 6.0,
+        "tenure": 1.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Subject: AI Developer Intern Opportunity – Perfect Match for Your Prompt Engineering Expertise!\n\nHi Sophia,\n\nI came across your profile and was immediately impressed by your self-employed experience in AI Prompt Engineering. Your specialized focus truly stands out and aligns perfectly with a key area of an exciting AI Developer Intern role we're recruiting for.\n\nThis internship is deeply centered on developing cutting-edge AI solutions, with a primary focus on prompt engineering, Retrieval-Augmented Generation (RAG) pipelines, and agent frameworks like LangChain. Your background is an excellent fit for creating the powerful conversational AI experiences this role entails.\n\nYour proactive approach and expertise in prompt engineering make you a standout candidate for this opportunity.\n\nWould you be open to a brief 15-minute chat next week to discuss this role further and see how your skills could contribute?\n\nBest regards,"
+    },
+    {
+      "name": "Mayesha Fahmida - AI Prompt Engineering Intern - Google",
+      "linkedin_url": "https://www.linkedin.com/in/mfahmida",
+      "fit_score": 1.95,
+      "score_breakdown": {
+        "education": 0.0,
+        "trajectory": 0.0,
+        "company": 9.0,
+        "skills": 0.0,
+        "location": 6.0,
+        "tenure": 0.0
+      },
+      "key_matches": [
+        "Impressive company background"
+      ],
+      "outreach_message": "Hi Mayesha,\n\nHope you're having a great week!\n\nI came across your profile and was truly impressed by your work as an AI Prompt Engineering Intern at Google. Your focus on developing cutting-edge AI solutions and hands-on experience with prompt engineering immediately stood out to me.\n\nOur AI Developer Intern role here is a fantastic fit, as it centers on building powerful conversational AI experiences using prompt engineering, Retrieval-Augmented Generation (RAG) pipelines, and agent frameworks like LangChain or LangGraph. Your background aligns perfectly with the innovative work we're doing.\n\nI'd love to tell you more about how your skills and passion for AI development could thrive within our team. Would you be open to a brief 15-minute chat next week to explore this opportunity further?\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "name": "Sania Ali - Learn AI Prompt Engineering",
+      "linkedin_url": "https://in.linkedin.com/in/sania-ali-1809a8367",
+      "fit_score": 1.0,
+      "score_breakdown": {
+        "education": 1.0,
+        "trajectory": 1.0,
+        "company": 1.0,
+        "skills": 1.0,
+        "location": 1.0,
+        "tenure": 1.0
+      },
+      "key_matches": [
+        "Profile match",
+        "Relevant experience"
+      ],
+      "outreach_message": "Hi Sania,\n\nI came across your profile and was immediately drawn to your focus on 'Learn AI Prompt Engineering'. Your dedication to this area truly stands out.\n\nWe're currently seeking an AI Developer Intern who is passionate about building cutting-edge conversational AI solutions, with a primary focus on prompt engineering, Retrieval-Augmented Generation (RAG) pipelines, and agent frameworks like LangChain or LangGraph. Your background directly aligns with these core responsibilities, and we believe your skills would be incredibly valuable in developing powerful AI experiences.\n\nWould you be open to a brief chat to explore how your expertise could contribute to our team and learn more about this exciting opportunity?\n\nBest regards,\n[Your Name]\n[Your Company]"
+    }
+  ]
+}
