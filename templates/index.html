@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Sourcing Agent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .main-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        
+        .header p {
+            margin: 1rem 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .form-container {
+            padding: 2rem;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner {
+            width: 3rem;
+            height: 3rem;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-container {
+            margin: 1rem 0;
+        }
+        
+        .progress-step {
+            display: inline-block;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #f8f9fa;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .progress-step.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .progress-step.completed {
+            background: #28a745;
+            color: white;
+        }
+        
+        .default-description {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .alert {
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .alert-success {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            color: #155724;
+        }
+        
+        .alert-danger {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="header">
+                <h1><i class="fas fa-search"></i> LinkedIn Sourcing Agent</h1>
+                <p>AI-powered candidate discovery and outreach automation</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="searchForm">
+                    <div class="mb-4">
+                        <label for="jobDescription" class="form-label">
+                            <i class="fas fa-briefcase"></i> Job Description
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="jobDescription" 
+                            name="job_description" 
+                            rows="6" 
+                            placeholder="Enter the job description here..."
+                        ></textarea>
+                        <div class="default-description">
+                            <strong>Default:</strong> Software Engineer ML Research at Windsurf (Codeium) - Forbes AI 50 company building AI-powered developer tools. Train LLMs for code generation, $140-300k + equity, Mountain View. Machine learning, neural networks, large language models, code generation, developer tools.
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container" id="progressContainer" style="display: none;">
+                        <div class="progress-step" id="step1">1. Searching Candidates</div>
+                        <div class="progress-step" id="step2">2. Scoring Candidates</div>
+                        <div class="progress-step" id="step3">3. Generating Messages</div>
+                    </div>
+                    
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <h5>Processing your request...</h5>
+                        <p>This may take a few minutes as we search, score, and generate personalized messages.</p>
+                    </div>
+                    
+                    <div class="alert alert-success" id="successAlert" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <span id="successMessage"></span>
+                    </div>
+                    
+                    <div class="alert alert-danger" id="errorAlert" style="display: none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span id="errorMessage"></span>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i> Start Sourcing
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const loading = document.getElementById('loading');
+            const progressContainer = document.getElementById('progressContainer');
+            const successAlert = document.getElementById('successAlert');
+            const errorAlert = document.getElementById('errorAlert');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Reset alerts
+            successAlert.style.display = 'none';
+            errorAlert.style.display = 'none';
+            
+            // Show loading
+            loading.style.display = 'block';
+            progressContainer.style.display = 'block';
+            submitBtn.disabled = true;
+            
+            // Simulate progress steps
+            simulateProgress();
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Show success message
+                    document.getElementById('successMessage').textContent = result.message;
+                    successAlert.style.display = 'block';
+                    
+                    // Redirect to results page after a short delay
+                    setTimeout(() => {
+                        window.location.href = '/results';
+                    }, 2000);
+                } else {
+                    throw new Error(result.error || 'An error occurred');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('errorMessage').textContent = error.message || 'An error occurred while processing your request.';
+                errorAlert.style.display = 'block';
+            } finally {
+                // Hide loading
+                loading.style.display = 'none';
+                progressContainer.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        });
+        
+        function simulateProgress() {
+            const steps = ['step1', 'step2', 'step3'];
+            let currentStep = 0;
+            
+            const interval = setInterval(() => {
+                if (currentStep < steps.length) {
+                    // Mark current step as active
+                    document.getElementById(steps[currentStep]).classList.add('active');
+                    
+                    // Mark previous steps as completed
+                    for (let i = 0; i < currentStep; i++) {
+                        document.getElementById(steps[i]).classList.remove('active');
+                        document.getElementById(steps[i]).classList.add('completed');
+                    }
+                    
+                    currentStep++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 2000); // Change step every 2 seconds
+        }
+    </script>
+</body>
+</html> 
